@@ -93,6 +93,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
     } 
     .background-picture {
         width: 100%;
@@ -105,27 +106,34 @@ body {
         object-fit: cover;
     }
     /* chinh chuyen qua lại picture */
-    .prev, .next {
+    .dot-container {
+        text-align: center;
         position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
+        width: 100%;
+        bottom: 10px; /* Điều chỉnh khoảng cách từ dưới cùng */
+        left: 0; /* Đảm bảo căn giữa theo chiều ngang */
+    }
+    
+    .dot {
+        height: 15px;
+        width: 15px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
         cursor: pointer;
+        margin: 0 5px; /* Điều chỉnh khoảng cách giữa các "dot" */
     }
+    
 
-    .prev {
-        left: 0;
-    }
+    
+    /* Thêm các đối tượng .dot khác tương tự như trên */
+    
+      
+      .dot.active {
+        background-color: #717171;
+      }
+      
 
-    .next {
-        right: 0;
-    }
 /* sản phẩm */
 .section-listproducts {
     display:grid;
