@@ -252,7 +252,7 @@ body.dark .switch-hnm::before {
     left: 24px;
 }
 
-.home-hnm{
+.tab-content{
     position: relative;
     left: 250px;
     height: 100vh;
@@ -260,13 +260,13 @@ body.dark .switch-hnm::before {
     background:var(--body-color);
     transition: var(--tran-05);
 }
-.home-hnm .text-hnm{
+.tab-content .text-hnm{
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
     padding: 8px 40px;
 }
-.sidebar-hnm.close ~ .home-hnm{
+.sidebar-hnm.close ~ .tab-content{
     left: 88px;
     width: calc(100% - 88px);
 }

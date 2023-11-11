@@ -23,35 +23,36 @@
             </div>
             <i class='bx bx-chevron-right toggle-hnm'></i>
         </header>
+
         <div class="menu-bar menu-bar-hnm">
             <div class="menu menu-hnm">
                 <ul class="menu-links menu-links-hnm">
                     <li class="nav-link nav-link-hnm">
-                        <a href="#">
+                        <a href="#dashboard-section">
                             <i class='bx bx-home-alt icon'></i>
                             <span class="text nav-text nav-text-hnm">Trang chủ</span>
                         </a>
                     </li>
                     <li class="nav-link nav-link-hnm">
-                        <a href="#">
+                        <a href="#customer-section">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav-text nav-text-hnm">Khách hàng</span>
                         </a>
                     </li>
                     <li class="nav-link nav-link-hnm">
-                        <a href="#">
+                        <a href="#product-section">
                             <i class='bx bx-store-alt icon'></i>
                             <span class="text nav-text nav-text-hnm">Sản phẩm</span>
                         </a>
                     </li>
                     <li class="nav-link nav-link-hnm">
-                        <a href="#">
+                        <a href="#promotion-section">
                             <i class='bx bxs-discount icon'></i>
                             <span class="text nav-text nav-text-hnm">Khuyến mãi</span>
                         </a>
                     </li>
                     <li class="nav-link nav-link-hnm">
-                        <a href="#">
+                        <a href="#blog-section">
                             <i class='bx bxs-news icon'></i>
                             <span class="text nav-text nav-text-hnm">Blog</span>
                         </a>
@@ -80,10 +81,36 @@
             </div>
         </div>
     </nav>
-    <section class="home home-hnm">
+    <section class="home home-hnm tab-content" id="dashboard-section">
         <div class="text text-hnm">Dashboard</div>
     </section>
+    <section class="customer customer-hnm tab-content" id="customer-section">
+        <div class="text text-hnm">Khách hàng</div>
+    </section>
+    <section class="product product-hnm tab-content" id="product-section">
+        <div class="text text-hnm">Sản phẩm</div>
+    </section>
+    <section class="promotion promotion-hnm tab-content" id="promotion-section">
+        <div class="text text-hnm">Khuyến mãi</div>
+    </section>
+    <section class="blog blog-hnm tab-content" id="blog-section">
+        <div class="text text-hnm">Blog</div>
+    </section>
     <script src="admin_dashboard.js"></script>
+    <script src="./jq.js"></script>
 </body>
+<script>
+    $(document).ready(function () {
+        $('.menu-hnm ul li a').click(function (event) {
+            event.preventDefault();
+            $('.tab-content').hide();
+            var content = $(this).attr('href');
+            $(this).parent().addClass('active');
+            $(this).parent().siblings().removeClass('active');
+            $(content).show();
+            $(content).siblings('.tab-content').hide();
+        });
+    })
+</script>
 
 </html>
