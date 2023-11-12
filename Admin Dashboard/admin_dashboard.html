@@ -28,9 +28,9 @@
             <div class="menu menu-hnm">
                 <ul class="menu-links menu-links-hnm">
                     <li class="nav-link nav-link-hnm">
-                        <a href="#dashboard-section">
-                            <i class='bx bx-home-alt icon'></i>
-                            <span class="text nav-text nav-text-hnm">Trang chủ</span>
+                        <a href="#order-section">
+                            <i class='bx bx-receipt icon'></i>
+                            <span class="text nav-text nav-text-hnm">Đơn hàng</span>
                         </a>
                     </li>
                     <li class="nav-link nav-link-hnm">
@@ -81,8 +81,8 @@
             </div>
         </div>
     </nav>
-    <section class="home home-hnm tab-content" id="dashboard-section">
-        <div class="text text-hnm">Dashboard</div>
+    <section class="home home-hnm" id="order-section">
+        <div class="text text-hnm">Đơn hàng</div>
     </section>
     <section class="customer customer-hnm tab-content" id="customer-section">
         <div class="text text-hnm">Khách hàng</div>
@@ -96,21 +96,10 @@
     <section class="blog blog-hnm tab-content" id="blog-section">
         <div class="text text-hnm">Blog</div>
     </section>
-    <script src="admin_dashboard.js"></script>
-    <script src="./jq.js"></script>
 </body>
-<script>
-    $(document).ready(function () {
-        $('.menu-hnm ul li a').click(function (event) {
-            event.preventDefault();
-            $('.tab-content').hide();
-            var content = $(this).attr('href');
-            $(this).parent().addClass('active');
-            $(this).parent().siblings().removeClass('active');
-            $(content).show();
-            $(content).siblings('.tab-content').hide();
-        });
-    })
-</script>
+
+<script src="./jq.js"></script>
+<script src="admin_dashboard.js"></script>
+
 
 </html>
