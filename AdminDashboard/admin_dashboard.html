@@ -83,6 +83,26 @@
     </nav>
     <section class="home home-hnm" id="order-section">
         <div class="text text-hnm">Đơn hàng</div>
+        <table>
+            <form method="POST" action="xuly.php">
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Danh mục</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="tensanpham">
+                    </td>
+                    <td>
+                        <input type="text" name="danhmuc">
+                    </td>
+                    <td>
+                        <input type="submit" name="themsanpham" value="Thêm sản phẩm">
+                    </td>
+                </tr>
+            </form>
+
+        </table>
     </section>
     <section class="customer customer-hnm tab-content" id="customer-section">
         <div class="text text-hnm">Khách hàng</div>
