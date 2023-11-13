@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="admin_dashboard.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Admin Dashboard</title>
-</head>
-
-<body>
-    <nav class="sidebar sidebar-hnm close">
+<nav class="sidebar sidebar-hnm close">
         <header>
             <div class="image-text image-text-hnm">
                 <span class="image image-hnm">
@@ -23,7 +11,7 @@
             </div>
             <i class='bx bx-chevron-right toggle-hnm'></i>
         </header>
-
+    
         <div class="menu-bar menu-bar-hnm">
             <div class="menu menu-hnm">
                 <ul class="menu-links menu-links-hnm">
@@ -80,46 +68,6 @@
                 </li>
             </div>
         </div>
+        
     </nav>
-    <section class="home home-hnm" id="order-section">
-        <div class="text text-hnm">Đơn hàng</div>
-        <table>
-            <form method="POST" action="xuly.php">
-                <tr>
-                    <th>Tên sản phẩm</th>
-                    <th>Danh mục</th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="text" name="tensanpham">
-                    </td>
-                    <td>
-                        <input type="text" name="danhmuc">
-                    </td>
-                    <td>
-                        <input type="submit" name="themsanpham" value="Thêm sản phẩm">
-                    </td>
-                </tr>
-            </form>
 
-        </table>
-    </section>
-    <section class="customer customer-hnm tab-content" id="customer-section">
-        <div class="text text-hnm">Khách hàng</div>
-    </section>
-    <section class="product product-hnm tab-content" id="product-section">
-        <div class="text text-hnm">Sản phẩm</div>
-    </section>
-    <section class="promotion promotion-hnm tab-content" id="promotion-section">
-        <div class="text text-hnm">Khuyến mãi</div>
-    </section>
-    <section class="blog blog-hnm tab-content" id="blog-section">
-        <div class="text text-hnm">Blog</div>
-    </section>
-</body>
-
-<script src="./jq.js"></script>
-<script src="admin_dashboard.js"></script>
-
-
-</html>

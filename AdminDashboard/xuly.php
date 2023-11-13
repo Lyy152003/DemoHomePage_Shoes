@@ -5,7 +5,6 @@ $danhmuc = $_POST['danhmuc'];
 if(isset($_POST['themsanpham'])){
     $sql_themsp="INSERT INTO sanpham(tensp,danhmucsp) VALUES ('".$tensanpham."','".$danhmuc."')";
     mysqli_query($mysqli,$sql_themsp);
-    header('Location:http://localhost/DemoHomePage_Shoes/AdminDashboard/admin_dashboard.html');
+    header('Location:menu/themspthanhcong.php');
 }
-
 ?>
