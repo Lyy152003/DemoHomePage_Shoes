@@ -11,16 +11,12 @@
 
 <body>
     <?php
-    include('menu_navigation.php');//display menu
-    include('menu/order_section.php');
-    include('menu/customer_section.php');
-    include('menu/product_section.php');
-    include('menu/promotion_section.php');
-    include('menu/blog_section.php');
+    include('../../navigation/menu_navigation.php');
+    include('../../menu/order_section.php');
     ?>
 </body>
 
-<script src="jq.js"></script>
+<script src="../../../jq.js"></script>
 <script src="admin_dashboard.js"></script>
 
 

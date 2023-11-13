@@ -2,7 +2,10 @@
         <header>
             <div class="image-text image-text-hnm">
                 <span class="image image-hnm">
-                    <img src="./image_admin_dashboard/logo.png" alt="logo">
+                    <a href="../dashboard/admin_dashboard.php">
+                    <img src="../../navigation/logo.png" alt="logo">
+                    </a>
+                    
                 </span>
                 <div class="text header-text header-text-hnm">
                     <span class="name name-hnm">Blocks Magic</span>
@@ -16,31 +19,31 @@
             <div class="menu menu-hnm">
                 <ul class="menu-links menu-links-hnm">
                     <li class="nav-link nav-link-hnm">
-                        <a href="#order-section">
+                        <a href="../orders/orders_management.php">
                             <i class='bx bx-receipt icon'></i>
                             <span class="text nav-text nav-text-hnm">Đơn hàng</span>
                         </a>
                     </li>
                     <li class="nav-link nav-link-hnm">
-                        <a href="#customer-section">
+                        <a href="../customers/customers_management.php">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav-text nav-text-hnm">Khách hàng</span>
                         </a>
                     </li>
                     <li class="nav-link nav-link-hnm">
-                        <a href="#product-section">
+                        <a href="../products/products_management.php">
                             <i class='bx bx-store-alt icon'></i>
                             <span class="text nav-text nav-text-hnm">Sản phẩm</span>
                         </a>
                     </li>
                     <li class="nav-link nav-link-hnm">
-                        <a href="#promotion-section">
+                        <a href="../promotions/promotions_management.php">
                             <i class='bx bxs-discount icon'></i>
                             <span class="text nav-text nav-text-hnm">Khuyến mãi</span>
                         </a>
                     </li>
                     <li class="nav-link nav-link-hnm">
-                        <a href="#blog-section">
+                        <a href="../blogs/blogs_management.php">
                             <i class='bx bxs-news icon'></i>
                             <span class="text nav-text nav-text-hnm">Blog</span>
                         </a>

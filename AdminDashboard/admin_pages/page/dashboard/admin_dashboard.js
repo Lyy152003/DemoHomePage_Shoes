@@ -18,22 +18,4 @@ modeSwitch.addEventListener("click", () => {
     }
 });
 
-$('.tab-content').hide();
-$('.menu-hnm ul li a').click(function (event) {
-    if ($(this).attr('href') == "#order-section") {
-        $('.tab-content').hide();
-        var content = $(this).attr('href');
-        $(content).show();
-    }
-    else {
-        $('.home-hnm').hide();
-        var content = $(this).attr('href');
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-        $(content).show();
-        $(content).siblings('.tab-content').hide();
-    }
-});
-
-
 
