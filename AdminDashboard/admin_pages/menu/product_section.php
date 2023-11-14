@@ -1,48 +1,50 @@
-<?php
-$sql_lietke_sanpham = "SELECT * FROM sanpham";
-$query_lieke_sanpham = mysqli_query($mysqli, $sql_lietke_sanpham);
-?>
 <section class="product product-hnm tab-content" id="product-section">
     <div class="text text-hnm">Sản phẩm</div>
-    <table>
-        <form method="POST" action="xuly.php">
+    <div class="btn-add-product-container">
+        <a href="products_add.php" id="themsanpham_text">
+        <button type="button" class="btn-add-product">
+            <span class="btn-add-product-text"><b>Thêm sản phẩm</b></span>
+            <span class="btn-add-product-icon">
+                <i class='bx bx-plus'></i>
+            </span>
+        </button>
+        </a>
+    </div>
+    <div class="product_list_container">
+        <table class="product_list" border="1" style="border-collapse: collapse; width:100%;">
             <tr>
-                <th>Tên sản phẩm</th>
+                <th>ID</th>
+                <th>Tên</th>
+                <th>Kích thước</th>
+                <th>Dòng</th>
+                <th>Kiểu dáng</th>
+                <th>Màu sắc</th>
                 <th>Danh mục</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Xóa / Sửa</th>
             </tr>
             <tr>
+                <td>SP01</td>
+                <td>Giày batas</td>
+                <td>36</td>
+                <td>Vintas</td>
+                <td>High top</td>
+                <td>Đỏ</td>
+                <td>Giày nam</td>
+                <td>100</td>
+                <td>1900000</td>
                 <td>
-                    <input type="text" name="tensanpham">
-                </td>
-                <td>
-                    <input type="text" name="danhmuc">
-                </td>
-                <td>
-                    <input type="submit" name="themsanpham" value="Thêm sản phẩm">
+                    <a href="#"><i class='bx bx-trash'></i></a> | <a href="#"><i class='bx bx-edit'></i></a>
                 </td>
             </tr>
-        </form>
-    </table>
-    <table border="1" style="border-collapse: collapse;">
-        <tr>
-            <th>Thứ tự</th>
-            <th>Tên sản phẩm</th>
-            <th>Danh mục</th>
-            <th>Xóa/Sửa</th>
-        </tr>
-        <?php
-        $i = 0;
-        while ($row = mysqli_fetch_array($query_lieke_sanpham)) {
-            $i++;
-        ?>
-            <tr>
-                <td><?php echo $i ?></td>
-                <td><?php echo $row['tensp'] ?></td>
-                <td><?php echo $row['danhmucsp'] ?></td>
-                <td><a href="xuly.php?idsanpham=<?php echo $row['id']?>">Xóa</a> | <a href="#">Sửa</a></td>
-            </tr>
-        <?php
-        }
-        ?>
-    </table>
+        </table>
+    </div>
 </section>
+<script>
+    $(function(){
+        $('.btn-add-product').click(function(){
+            
+        })
+    })
+</script>
