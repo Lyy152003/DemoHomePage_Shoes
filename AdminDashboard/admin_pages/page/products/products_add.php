@@ -29,22 +29,22 @@
             margin-bottom: 5px;
         }
 
-        /* #input_tensanpham,
-        #input_giasanpham,
-        #select_danhmucsanpham,
-        #select_dongsanpham,
-        #select_kieudang,
-        #textarea_thongtinsanpham {
-            width: 100%;
-            max-width: 250px;
-            padding: 8px;
-            margin-bottom: 10px;
-        } */
         #input_tensanpham,
         #input_giasanpham {
             width: 100%;
-            max-width: 480px;
+            max-width: 460px;
             padding: 8px;
+        }
+
+        #select_danhmucsanpham,
+        #select_dongsanpham,
+        #select_kieudang {
+            padding: 4px;
+        }
+
+        #textarea_thongtinsanpham {
+            width: 100%;
+            max-width: 460px;
         }
 
         select {
@@ -236,7 +236,7 @@
             align-items: center;
         }
 
-        #div_upload_anh_1 {
+        /* #div_upload_anh_1 {
             background-color: green;
         }
 
@@ -250,7 +250,7 @@
 
         #div_upload_anh_4 {
             background-color: yellow;
-        }
+        } */
 
         .div_upload {
             margin: auto;
@@ -259,23 +259,50 @@
         #div_color_size_uploadimage {
             border-style: solid;
             max-width: 1000px;
+            border-color: #ff5f17;
         }
 
         #div_products_add_enter {
             margin-left: 40px;
-            background-color: aqua;
         }
 
         #div_danhmucsanpham,
         #div_dongsanpham,
         #div_kieudang {
             flex: 1;
-            margin-right: 10px;
-            /* Để tạo khoảng cách giữa các div */
+            margin-right: 0px;
         }
-        #test{
+
+        #div_danhmuc_dong_kieudang {
             display: flex;
-    flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .btn-themsanpham {
+            display: flex;
+            height: 35px;
+            padding: 0;
+            background: #ff5f17;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            overflow: hidden;
+            font-family: "Quicksand", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .btn-themsanpham:hover {
+            background: #d54e10;
+        }
+
+        .btn-themsanpham-text {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 5px;
+            color: #fff;
+            height: 100%;
         }
     </style>
 </head>
@@ -292,17 +319,17 @@
             <div id="div_products_add_enter">
                 <div id="div_themsanpham">
                     <label id="label_tensanpham">Tên sản phẩm</label>
-                    <input type="text" id="input_tensanpham" name="input_tensanpham">
+                    <input type="text" id="input_tensanpham" name="input_tensanpham" placeholder="Nhập tên sản phẩm">
                 </div>
                 <br>
                 <div id="div_giasanpham">
                     <label id="label_giasanpham">Giá sản phẩm</label>
-                    <input type="text" id="input_giasanpham" name="input_giasanpham">
+                    <input type="text" id="input_giasanpham" name="input_giasanpham" placeholder="Nhập giá sản phẩm">
                 </div>
                 <br>
-                <div id="test">
+                <div id="div_danhmuc_dong_kieudang">
                     <div id="div_danhmucsanpham">
-                        <label id="label_danhmucsanpham">Danh mục sản phẩm</label>
+                        <label id="label_danhmucsanpham">Danh mục</label>
                         <select id="select_danhmucsanpham" name="select_danhmucsanpham">
                             <option>Nam</option>
                             <option>Nữ</option>
@@ -310,7 +337,7 @@
                     </div>
                     <br>
                     <div id="div_dongsanpham">
-                        <label id="label_dongsanpham">Dòng sản phẩm</label>
+                        <label id="label_dongsanpham">Dòng</label>
                         <select id="select_dongsanpham" name="select_dongsanpham">
                             <option name="basas">Basas</option>
                             <option name="vintas">Vintas</option>
@@ -322,7 +349,7 @@
                     </div>
                     <br>
                     <div id="div_kieudang">
-                        <label id="label_kieudang">Kiểu dáng sản phẩm</label>
+                        <label id="label_kieudang">Kiểu dáng</label>
                         <select id="select_kieudang" name="select_kieudang">
                             <option name="lowtop">Low Top</option>
                             <option name="hightop">High Top</option>
@@ -334,9 +361,12 @@
                 <br>
                 <div id="div_thongtinsanpham">
                     <label id="label_thongtinsanpham">Thông tin sản phẩm</label>
-                    <br>
-                    <textarea id="textarea_thongtinsanpham" name="textarea_thongtinsanpham" rows="5"></textarea>
+                    <textarea id="textarea_thongtinsanpham" name="textarea_thongtinsanpham" rows="8"></textarea>
                 </div>
+                <button type="button" class="btn-themsanpham">
+                    <span class="btn-themsanpham-text" name="btn-themsanpham-text"><b>Thêm sản phẩm</b></span>
+                </button>
+
             </div>
         </div>
 
@@ -417,24 +447,24 @@
                 <br>
                 <div class="div_upload">
                     <div id="div_upload_anh_1">
-                        <label id="label_anh1">Ảnh 1 </label><br>
+                        <label id="label_anh1"><b>Ảnh 1</b> </label><br>
                         <input type="file" id="input_upload_anh_1" name="input_upload_anh_1" accept=".jpg, .jpeg, .png">
                         <div id="div_hienthi_anh1"></div>
                     </div>
                     <div id="div_upload_anh_2">
-                        <label id="label_anh2">Ảnh 2 </label><br>
+                        <label id="label_anh2"><b>Ảnh 2</b> </label><br>
                         <input type="file" id="input_upload_anh_2" name="input_upload_anh_2" accept=".jpg, .jpeg, .png">
                         <div id="div_hienthi_anh2"></div>
                     </div>
                 </div>
                 <div class="div_upload">
                     <div id="div_upload_anh_3">
-                        <label id="label_anh3">Ảnh 3 </label><br>
+                        <label id="label_anh3"><b>Ảnh 3</b> </label><br>
                         <input type="file" id="input_upload_anh_3" name="input_upload_anh_3" accept=".jpg, .jpeg, .png">
                         <div id="div_hienthi_anh3"></div>
                     </div>
                     <div id="div_upload_anh_4">
-                        <label id="label_anh4">Ảnh 4 </label><br>
+                        <label id="label_anh4"><b>Ảnh 4</b> </label><br>
                         <input type="file" id="input_upload_anh_4" name="input_upload_anh_4" accept=".jpg, .jpeg, .png">
                         <div id="div_hienthi_anh4"></div>
                     </div>
@@ -452,6 +482,7 @@
 
         colorOptions.forEach(function(option) {
             option.addEventListener("click", function() {
+
                 colorSizeUploadImage.style.display = "block";
             });
         });

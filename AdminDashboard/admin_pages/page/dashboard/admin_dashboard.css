@@ -6,9 +6,9 @@
 }
 
 :root {
-    --body-color: #e4e9f7;
+    --body-color: #f1f1f1;
     --sidebar-color: #fff;
-    --primary-color: #695cfe;
+    --primary-color: #ff5f17;
     --primary-color-light: #f6f5ff;
     --toggle-color: #ddd;
     --text-color: #707070;
@@ -316,7 +316,7 @@ body.dark .product_list tr td{
     display: flex;
 	height: 35px;
 	padding: 0;
-	background: #009578;
+	background: #ff5f17;
 	border: none;
 	outline: none;
 	border-radius: 5px;
@@ -344,7 +344,7 @@ body.dark .product-hnm .btn-add-product{
 	cursor: pointer;
 }
 .product-hnm .btn-add-product:hover {
-	background: #008168;
+	background: #d54e10;
 }
 body.dark .product-hnm .btn-add-product:hover {
 	background: #999999;
