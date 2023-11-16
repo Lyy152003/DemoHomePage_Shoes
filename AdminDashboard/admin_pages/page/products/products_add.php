@@ -87,21 +87,17 @@
         .section_themsanpham {
             display: flex;
             align-items: stretch;
-            /* Đảm bảo chiều cao giữa các phần tử bằng nhau */
         }
 
         .div_products_add_1 {
             flex: 1;
-            /* Chiều ngang nhỏ hơn div_test */
             padding: 10px;
             align-items: center;
         }
 
         .div_products_add_2 {
             flex: 2;
-            /* Chiều ngang lớn hơn div_products_add_1 */
             padding: 10px;
-            /* Thêm padding nếu cần thiết */
         }
 
         #label_mausanpham {
@@ -236,22 +232,6 @@
             align-items: center;
         }
 
-        /* #div_upload_anh_1 {
-            background-color: green;
-        }
-
-        #div_upload_anh_2 {
-            background-color: red;
-        }
-
-        #div_upload_anh_3 {
-            background-color: purple;
-        }
-
-        #div_upload_anh_4 {
-            background-color: yellow;
-        } */
-
         .div_upload {
             margin: auto;
         }
@@ -313,7 +293,7 @@
     ?>
     <section class="section_themsanpham">
 
-        <div class="div_products_add_1 ">
+        <div class="div_products_add_1">
 
             <p class="text text-hnm">Thêm sản phẩm</p>
             <div id="div_products_add_enter">

@@ -59,16 +59,6 @@
                         </a>
                     </li>
                 </div>
-                <li class="mode mode-hnm">
-                    <div class="moon-sun">
-                        <i class='bx bxs-moon icon moon-hnm'></i>
-                        <i class='bx bxs-sun icon sun-hnm'></i>
-                    </div>
-                    <span class="mode-text text nav-text-hnm mode-text-hnm">Chế độ tối</span>
-                    <div class="toggle-switch toggle-switch-hnm">
-                        <span class="switch switch-hnm"></span>
-                    </div>
-                </li>
             </div>
         </div>
         
