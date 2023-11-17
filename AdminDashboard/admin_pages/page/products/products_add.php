@@ -648,3 +648,4 @@
         img.alt = currentImage_4.alt;
     }
 </script>
+</html>

@@ -74,6 +74,7 @@
     .promotion_list_container {
         margin-top: 60px;
     }
+    
 </style>
 <section class="promotion promotion-hnm tab-content" id="promotion-section">
     <div class="text text-hnm">Khuyến mãi</div>
