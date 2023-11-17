@@ -42,7 +42,7 @@
                 <td>17-11-2023</td>
                 <td>Chuyển khoản</td>
                 <td>2500000</td>
-                <td><a href="#"><i class='bx bx-receipt'></i></a></td>
+                <td><a href="order_detail.php"><i class='bx bx-receipt'></i></a></td>
             </tr>
         </table>
     </div>

@@ -84,10 +84,9 @@
             flex-wrap: wrap;
         }
 
-        #div_themngaybatdaukhuyenmai,
-        #div_themngayketthuckhuyenmai {
-            flex: 1;
-            margin-right: 0px;
+
+        #div_themngaybatdaukhuyenmai {
+            margin-right: 20px;
         }
 
         #input_ngaybatdaukhuyenmai,
@@ -113,7 +112,7 @@
             margin-bottom: 10px;
         }
 
-        #input_radio_dongsanpham{
+        #input_radio_dongsanpham {
             margin-bottom: 10px;
         }
 
@@ -148,9 +147,11 @@
             color: #fff;
             height: 100%;
         }
+
         #id_table_sanphamcuthe {
             border: solid 3px #ff5f17;
         }
+
         #id_table_sanphamcuthe tr td #input_nhapidsanphamcuthe {
             padding: 8px;
         }
@@ -192,7 +193,8 @@
             color: #ff5f17;
             height: 100%;
         }
-        #select_khuyenmai_dongsanpham{
+
+        #select_khuyenmai_dongsanpham {
             display: none;
         }
     </style>
@@ -265,19 +267,19 @@
         var radioDongSanPham = document.getElementById("input_radio_dongsanpham");
         var btnThemSanPhamCuthe = document.querySelector('.btn_themsanphamcuthe');
         var tableSanPhamCuthe = document.querySelector('#id_table_sanphamcuthe');
-        var selectDongSanPham=document.querySelector('#select_khuyenmai_dongsanpham');
+        var selectDongSanPham = document.querySelector('#select_khuyenmai_dongsanpham');
         radioSanPhamCuthe.addEventListener("change", function() {
             if (radioSanPhamCuthe.checked) {
                 radioDongSanPham.checked = false;
                 btnThemSanPhamCuthe.style.display = 'flex';
-                selectDongSanPham.style.display='none';
+                selectDongSanPham.style.display = 'none';
                 resetSelect();
             }
         });
 
         radioDongSanPham.addEventListener("change", function() {
             if (radioDongSanPham.checked) {
-                selectDongSanPham.style.display='flex';
+                selectDongSanPham.style.display = 'flex';
                 radioSanPhamCuthe.checked = false;
                 btnThemSanPhamCuthe.style.display = 'none'; // Ẩn nút khi chọn radio "Dòng sản phẩm"
                 resetTable(); // Gọi hàm để reset bảng
@@ -288,11 +290,11 @@
             tableSanPhamCuthe.innerHTML = ''; // Xóa nội dung bảng
             // Các bước khác để reset dữ liệu theo nhu cầu của bạn
         }
-         // Hàm để reset select
-    function resetSelect() {
-        selectDongSanPham.selectedIndex = 0; // Đặt lại index về giá trị mặc định (hoặc giá trị mong muốn khác)
-        // Các bước khác để reset dữ liệu select theo nhu cầu của bạn
-    }
+        // Hàm để reset select
+        function resetSelect() {
+            selectDongSanPham.selectedIndex = 0; // Đặt lại index về giá trị mặc định (hoặc giá trị mong muốn khác)
+            // Các bước khác để reset dữ liệu select theo nhu cầu của bạn
+        }
     });
 </script>
 <script>
