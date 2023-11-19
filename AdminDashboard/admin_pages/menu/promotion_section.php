@@ -105,7 +105,7 @@
                 <td id="td_promotion_enddate" name="td_promotion_enddate">30-11-2023</td>
                 <td id="td_promotion_discountpercentage" name="td_promotion_discountpercentage">25%</td>
                 <td>
-                    <a href="#"><i class='bx bx-trash'></i></a> | <a href="#"><i class='bx bx-edit'></i></a>
+                    <a href="#"><i class='bx bx-trash'></i></a> | <a href="promotions_edit.php"><i class='bx bx-edit'></i></a>
                 </td>
             </tr>
         </table>

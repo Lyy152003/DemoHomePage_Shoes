@@ -59,7 +59,7 @@
                 <td id="td_customerphonenumber" name="td_customerphonenumber">09090099</td>
                 <td id="td_customeremail" name="td_customeremail">lenguyennhatminh@gmail.com</td>
                 <td><a href="carts_management.php"><i class='bx bx-cart'></i></a></td>
-                <td><a href="#"><i class='bx bx-receipt'></i></a></td>
+                <td><a href="../orders/customer_orders_management.php"><i class='bx bx-receipt'></i></a></td>
             </tr>
         </table>
     </div>

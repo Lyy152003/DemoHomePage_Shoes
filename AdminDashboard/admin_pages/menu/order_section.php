@@ -37,11 +37,11 @@
                 <th>Chi tiết</th>
             </tr>
             <tr>
-                <td>001</td>
-                <td>KH01</td>
-                <td>17-11-2023</td>
-                <td>Chuyển khoản</td>
-                <td>2500000</td>
+                <td id="id_order_list_idorder" name="id_order_list_idorder">001</td>
+                <td id="id_order_list_idcustomer" name="id_order_list_idcustomer">KH01</td>
+                <td id="id_order_list_orderdate" name="id_order_list_orderdate">17-11-2023</td>
+                <td id="id_order_list_purchasetype" name="id_order_list_purchasetype">Chuyển khoản</td>
+                <td id="id_order_list_tongtien" name="id_order_list_tongtien">2500000</td>
                 <td><a href="order_detail.php"><i class='bx bx-receipt'></i></a></td>
             </tr>
         </table>

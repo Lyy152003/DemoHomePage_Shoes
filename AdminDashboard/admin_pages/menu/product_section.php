@@ -117,7 +117,7 @@
                 <td id="td_productquantity" name="td_productquantity">100</td>
                 <td id="td_productprice" name="td_productprice">1900000</td>
                 <td>
-                    <a href="#"><i class='bx bx-trash'></i></a> | <a href="#"><i class='bx bx-edit'></i></a>
+                    <a href="#"><i class='bx bx-trash'></i></a> | <a href="products_edit.php"><i class='bx bx-edit'></i></a>
                 </td>
             </tr>
         </table>

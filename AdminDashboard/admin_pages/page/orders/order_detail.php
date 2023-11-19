@@ -73,6 +73,33 @@
         .div_orders_detail_2 {
             flex: 2;
             padding: 10px;
+            margin-top: 60px;
+        }
+
+        .order_detail_list tr th {
+            background-color: #ff5f17;
+            color: white;
+        }
+
+        .order_detail_list tr td {
+            background-color: white;
+            font-weight: bold;
+        }
+
+        #id_order_detail_list_ordnumber,
+        #id_order_detail_list_tensanpham,
+        #id_order_detail_list_procolorsizeid,
+        #id_order_detail_list_soluongsanpham {
+            text-align: center;
+        }
+
+        #id_order_detail_list_giatiensanpham,
+        #id_order_detail_list_tongtienhang,
+        #id_order_detail_list_tongtienhang_display,
+        #id_order_detail_list_phivanchuyen,
+        #id_order_detail_list_phivanchuyen_display,
+        #id_order_detail_list_thanhtien,#id_order_detail_list_thanhtien_display{
+text-align: right;
         }
     </style>
 </head>
@@ -113,23 +140,23 @@
                     <th>Giá tiền</th>
                 </tr>
                 <tr>
-                    <td>1</td>
-                    <td>Giày nam</td>
-                    <td>SP0100244</td>
-                    <td>2</td>
-                    <td>2800000</td>
+                    <td id="id_order_detail_list_ordnumber" name="id_order_detail_list_ordnumber">1</td>
+                    <td id="id_order_detail_list_tensanpham" name="id_order_detail_list_tensanpham">Giày nam</td>
+                    <td id="id_order_detail_list_procolorsizeid" name="id_order_detail_list_procolorsizeid">SP0100244</td>
+                    <td id="id_order_detail_list_soluongsanpham" name="id_order_detail_list_soluongsanpham">2</td>
+                    <td id="id_order_detail_list_giatiensanpham" name="id_order_detail_list_giatiensanpham">2800000</td>
                 </tr>
                 <tr>
-                    <td colspan="4">Tổng tiền hàng</td>
-                    <td>2800000</td>
+                    <td colspan="4" id="id_order_detail_list_tongtienhang" name="id_order_detail_list_tongtienhang">Tổng tiền hàng</td>
+                    <td id="id_order_detail_list_tongtienhang_display" name="id_order_detail_list_tongtienhang_display">2800000</td>
                 </tr>
                 <tr>
-                    <td colspan="4">Phí vận chuyển</td>
-                    <td>40000</td>
+                    <td colspan="4" id="id_order_detail_list_phivanchuyen" name="id_order_detail_list_phivanchuyen">Phí vận chuyển</td>
+                    <td id="id_order_detail_list_phivanchuyen_display" name="id_order_detail_list_phivanchuyen_display">40000</td>
                 </tr>
                 <tr>
-                    <td colspan="4">Thành tiền</td>
-                    <td>2840000</td>
+                    <td colspan="4" id="id_order_detail_list_thanhtien" name="id_order_detail_list_thanhtien">Thành tiền</td>
+                    <td id="id_order_detail_list_thanhtien_display" name="id_order_detail_list_thanhtien_display">2840000</td>
                 </tr>
             </table>
         </div>
