@@ -32,6 +32,7 @@
                 <th>ID đơn hàng</th>
                 <th>Ngày đặt hàng</th>
                 <th>Hình thức thanh toán</th>
+                <th>ID mã giảm giá</th>
                 <th>Tổng tiền</th>
                 <th>Chi tiết</th>
             </tr>
@@ -39,6 +40,7 @@
                 <td id="id_customer_order_list_idorder" name="id_customer_order_list_idorder">001</td>
                 <td id="id_customer_order_list_orderdate" name="id_customer_order_list_orderdate">17-11-2023</td>
                 <td id="id_customer_order_list_purchasetype" name="id_customer_order_list_purchasetype">Chuyển khoản</td>
+                <td id="id_customer_order_list_idpromotion" name="id_customer_order_list_idpromotion">MGG001</td>
                 <td id="id_customer_order_list_tongtien" name="id_customer_order_list_tongtien">2500000</td>
                 <td><a href="order_detail.php"><i class='bx bx-receipt'></i></a></td>
             </tr>

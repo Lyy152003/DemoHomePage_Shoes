@@ -98,8 +98,11 @@
         #id_order_detail_list_tongtienhang_display,
         #id_order_detail_list_phivanchuyen,
         #id_order_detail_list_phivanchuyen_display,
-        #id_order_detail_list_thanhtien,#id_order_detail_list_thanhtien_display{
-text-align: right;
+        #id_order_detail_list_thanhtien,
+        #id_order_detail_list_thanhtien_display,
+        #id_order_detail_list_magiamgia,
+        #id_order_detail_list_magiamgia_display {
+            text-align: right;
         }
     </style>
 </head>
@@ -151,12 +154,16 @@ text-align: right;
                     <td id="id_order_detail_list_tongtienhang_display" name="id_order_detail_list_tongtienhang_display">2800000</td>
                 </tr>
                 <tr>
+                    <td colspan="4" id="id_order_detail_list_magiamgia" name="id_order_detail_list_magiamgia">Mã giảm giá</td>
+                    <td id="id_order_detail_list_magiamgia_display" name="id_order_detail_list_magiamgia_display">10000</td>
+                </tr>
+                <tr>
                     <td colspan="4" id="id_order_detail_list_phivanchuyen" name="id_order_detail_list_phivanchuyen">Phí vận chuyển</td>
                     <td id="id_order_detail_list_phivanchuyen_display" name="id_order_detail_list_phivanchuyen_display">40000</td>
                 </tr>
                 <tr>
                     <td colspan="4" id="id_order_detail_list_thanhtien" name="id_order_detail_list_thanhtien">Thành tiền</td>
-                    <td id="id_order_detail_list_thanhtien_display" name="id_order_detail_list_thanhtien_display">2840000</td>
+                    <td id="id_order_detail_list_thanhtien_display" name="id_order_detail_list_thanhtien_display">2850000</td>
                 </tr>
             </table>
         </div>
